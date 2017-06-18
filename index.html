@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quote Machine OS</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="powerButton" class="row center valign-wrapper">
+  <div id="test" class="col s12">
+    <a href="#powerOn"><i class="large material-icons valign">power_settings_new</i></a>
+  </div>
+  </div>
+<div id="screen">
+<div id="program" class="row">
+  <div id="programBar" class="col s10 l6 z-depth-3 black">
+    <p id="consoleHeader">
+      [-_-] Quotinator v1.0
+      <span class="boxes"><a href="#programExitApp">[x]</a></span>
+      <span class="boxes"><a href="#programMinApp">[_]</a></span>
+    </p>
+  </div>
+  <div id="prompt" class="col s10 l6 z-depth-3 black">
+    <p id="history">Welcome to the Quotinator<br>-------------------------<br>Type "quote" into the program to receive a quote. To tweet the last quote received type "tweet". You can type "help" for a full list of commands or go to the start menu and view the readme.txt file<br><br></p>
+    <p id="consoleText">X:\Quotinator><input id="command" type="text" /></p>
+  </div>
+</div>
+
+<div id="readme" class="row">
+  <div id="readmeBar" class="col s10 push-s1 z-depth-3 black">
+    <p id="consoleHeader">
+      [-_-] readme.txt [read-only]
+      <span class="boxes"><a href="#readmeExitApp">[x]</a></span>
+      <span class="boxes"><a href="#readmeMinApp">[_]</a></span>
+    </p>
+  </div>
+  <div id="readmeArea" class="col s10 push-s1 z-depth-3 white">
+    <p id="readmeText">Welcome to Quotinator v1.0 readme.txt</p>
+    <p id="readmeText">-------------------------------------</p>
+    <p id="readmeText">You can click anywhere on the console program to type commands.</p>
+    <p id="readmeText">Accepted commands are:</p>
+    <p id="readmeText"><b>Quote</b> -- Displays a random quote to the console window</p>
+    <p id="readmeText"><b>Tweet</b> -- Opens an external page to tweet the last quote received (you do not have to be logged on to access this functionality)</p>
+    <p id="readmeText"><b>Help</b> -- Displays the help menu (similar to this readme) </p>
+    <p id="readmeText"><b>Info</b> -- Contains info about the quotinator program</p>
+    <p id="readmeText">-------------------------------------</p>
+    <p id="readmeText">About the Quotinator:</p>
+    <p id="readmeText">The quotinator was developed by Dylan Parker in response to a FreeCodeCamp.com project. It's sole purpose is to provide the user with random quotes and give them the ability to share those quotes via twitter.</p>
+    <p id="readmeText">-------------------------------------</p>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div id="startMenu" class="col s6 l2 grey lighten-1 z-depth-5">
+    <table class="highlight">
+      <tbody>
+        <tr>
+          <td><a href="#startProgram"><i class="medium material-icons">dashboard</i><div id="menuText"> Quotinator.exe</div></a></td>
+        </tr>
+        <tr>
+          <td><a href="#startReadme"><i class="medium material-icons">info</i><div id="menuText"> readme.txt</div></a></td>
+        </tr>
+        <tr>
+          <td><a href="#shutdown"><i class="medium material-icons">power_settings_new</i><div id="menuText">Shutdown</div></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="row">
+  <div id="taskbar" class="col s12 grey lighten-1 z-depth-5">
+    <div id="start">
+      <a href="#startMenu"><img id="startIcon" src="http://i991.photobucket.com/albums/af34/dparkerzz5150/start_zps3oclzneu.jpg" border="0" alt=" photo start_zps3oclzneu.jpg" /></a>
+    </div>
+    <div id="programIcon" class="grey lighten-1 z-depth-1 active"><a href="#programIcon"><i class="small material-icons">dashboard</i>Quotinator</a></div>
+    <div id="readmeIcon" class="grey lighten-1 z-depth-1 active"><a href="#readmeIcon"><i class="small material-icons">info</i>readme.txt</a></div>
+    <div id="tray" class="grey lighten-2">[-_-]</div>
+  </div>
+</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
